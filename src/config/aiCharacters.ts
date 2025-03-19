@@ -49,6 +49,11 @@ export const modelConfigs = [
     model: "ernie-3.5-128k",
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
+  },
+  {
+    model: "deepseek-reasoner",
+    apiKey: "DEEPSEEK_API_KEY1",
+    baseURL: "https://api.deepseek.com/v1"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
